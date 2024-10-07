@@ -8,7 +8,7 @@ DESCRIPTION             : The `mpra` package offers a variety of utility
                           by extension, monitoring directories, and more.
 SCRIPT REV              : 1.0
 SCRIPT DATE             : 2024-10-07
-AUTHOR                  : Manoj Pennada, S K mpraalya
+AUTHOR                  : Manoj Pennada, S K Prakalya
 *******************************************************************************
 '''
 
