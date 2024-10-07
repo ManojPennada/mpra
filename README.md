@@ -19,7 +19,7 @@ The `mpra` package offers a variety of utility functions to manage files and dir
 ## Usage
 
 ```python
-import mpra
+from mpra import mpra
 
 mpra.disk_stats("/path/to/directory")
 mpra.organize_files("/path/to/directory")
