@@ -1,4 +1,4 @@
-# mpra Package
+# Multipurpose Resource Automation(MPRA) Package
 
 ## Overview
 
