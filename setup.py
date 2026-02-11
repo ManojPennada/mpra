@@ -8,6 +8,9 @@ setup(
     author_email="manojpennada@gmail.com",
     packages=find_packages(),
     install_requires=[],
+    extras_require={
+        'excel': ['openpyxl'],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

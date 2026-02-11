@@ -5,6 +5,7 @@
 The `mpra` package offers a variety of utility functions to manage files and directories, such as checking disk usage, organizing files by extension, monitoring directories, and more.
 
 ## Features
+
 <div class="function">
     <h3>Disk Usage Checker</h3>
     <p>
@@ -35,6 +36,20 @@ The `mpra` package offers a variety of utility functions to manage files and dir
     </ul>
     <p><strong>Example:</strong></p>
     <pre><code>mpra.organize_files('/path/to/directory')</code></pre>
+</div>
+
+<div class="function">
+    <h3>Auto Categorize Files</h3>
+    <p>
+        <strong>Function:</strong> <code>auto_categorize_files(directory_path)</code><br>
+        <strong>Description:</strong> This function automatically organizes uncategorized files into an 'Others' folder. Files that match known categories (Images, Videos, Audio, Documents, Spreadsheets, Presentations, Archives, Data, 3D Models, Fonts) are left in place. Directories remain completely intact.
+    </p>
+    <p><strong>Parameters:</strong></p>
+    <ul>
+        <li><code>directory_path</code> (str): The path of the directory to auto-categorize.</li>
+    </ul>
+    <p><strong>Example:</strong></p>
+    <pre><code>mpra.auto_categorize_files('/path/to/directory')</code></pre>
 </div>
 
 <div class="function">
@@ -146,12 +161,25 @@ The `mpra` package offers a variety of utility functions to manage files and dir
 </body>
 </html>
 
-
 ## Usage
 
 ```python
-from mpra import mpra
+import mpra
 
+# Check disk usage
 mpra.disk_stats("/path/to/directory")
+
+# Organize files by extension
 mpra.organize_files("/path/to/directory")
+
+# Auto-categorize files (Images, Videos, Audio, Documents, etc.)
+mpra.auto_categorize_files("/path/to/directory")
+
+# Monitor directory for new files
+mpra.monitor_directory("/path/to/directory")
+
+# Backup files
+mpra.backup_files("/source", "/destination")
+
+# And more...
 ```
